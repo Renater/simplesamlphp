@@ -383,7 +383,7 @@ class Logout
      * @param Request $request The request that lead to this logout operation.
      * @return \SimpleSAML\HTTP\RunnableResponse
      */
-    public function resumeL(Request $request): RunnableResponse
+    public function resumeLogout(Request $request): RunnableResponse
     {
         if (!$request->query->has('id')) {
             throw new Error\BadRequest('Missing required parameter: id');
